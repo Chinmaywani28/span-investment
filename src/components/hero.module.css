@@ -1,0 +1,157 @@
+.hero {
+  padding: 60px 20px;
+  background-color: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e6f0ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.title span {
+  color: #2563eb;
+}
+
+.description {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 28px;
+  max-width: 500px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/* BUTTONS */
+.primaryBtn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primaryBtn:hover {
+  background-color: #1d4ed8;
+}
+
+.secondaryBtn {
+  background-color: white;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondaryBtn:hover {
+  background-color: #f1f5f9;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imageCard {
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6b9080, #a4c3b2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image {
+  max-width: 90%;
+  height: auto;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .container {
+    gap: 30px;
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .description {
+    margin: 0 auto 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .imageCard {
+    height: 250px;
+  }
+}

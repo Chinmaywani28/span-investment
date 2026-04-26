@@ -1,0 +1,164 @@
+/* NAVBAR */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 34px;
+  height: 34px;
+  background: #2f66d0;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+  font-size: 16px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+/* BUTTON */
+
+.get-started-btn {
+  background: #2f66d0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 3px;
+  background: black;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+  display: none;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+  .nav-links {
+    gap: 24px;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .get-started-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #eee;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  .mobile-menu li {
+    list-style: none;
+    font-size: 18px;
+  }
+
+  .mobile-btn {
+    background: #2f66d0;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 576px) {
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+}
